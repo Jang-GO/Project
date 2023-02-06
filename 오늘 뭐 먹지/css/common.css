@@ -1,0 +1,299 @@
+/* common */
+body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.btn {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box; /* 요소 크기 제한 */
+    display: block; /*겹쳐도 정상적으로 나오도록 */
+    transition: .4;
+}
+.btn:hover{
+    background-attachment: #333;
+    color: #fff;
+}
+.btn.btn--reverse{
+    background-color: #333;
+    color: #fff;
+}                       /*BEM*/
+.btn.btn--reverse:hover{
+    background-color: transparent; /*투명*/
+    color: #333;
+}
+.btn.btn--brown{
+    color: #592B1B;
+    border-color: #592B1B;
+}
+.btn.btn--brown:hover{
+    color: #fff;
+    background-color: #592B1B;
+}
+.btn.btn--gold{
+    color: #D9AA8A;
+    border-color: #D9AA8A;
+}
+.btn.btn--gold:hover{
+    color: #fff;
+    background-color: #D9AA8A;
+}
+.btn.btn--white{
+    color:#fff;
+    border-color: #fff;
+}
+.btn.btn.btn--white:hover{
+    color: #333;
+    background-color: #fff;
+}
+.back-to-position{
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position.to-right{
+    transform: translateX(-150px);
+}
+.back-to-position.to-left{
+    transform: translateX(150px);
+}
+.show .back-to-position{
+    opacity: 1;
+    transform: translateX(0);
+}
+.show .back-to-position.delay-0{
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1{
+    transition-delay: .3s;
+}
+.show .back-to-position.delay-2{
+    transition-delay: .6s;
+}
+.show .back-to-position.delay-3{
+    transition-delay: .9s;
+}
+
+
+
+
+/* header */
+/* header */ 
+header {
+    background-color: #f6f5f0;
+    border-bottom: 1px solid #c8c8c8;
+    display: flex;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 9; /* 순서 */
+}
+header > .inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 12px;
+}
+header .logo {    
+    height: 85px;
+    position: absolute; /*자식*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header .sub-menu {
+    display: flex; /*정렬*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+
+}
+
+header .main-menu {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header .main-menu a{
+    text-decoration: none;
+    color:#333;
+}
+
+header .main-menu .item .item__name {
+    padding: 20px 20px 18px 20px;
+    font-family: 'Jua', sans-serif;
+    font-size: 35px;
+    margin-bottom:20px;
+}
+header .main-menu .item:hover .item__name {
+    background-color: pink;
+    color: #669900;
+    border-radius: 6px 6px 6px 6px;
+}
+h2{
+    font-family: 'Jua', sans-serif;
+    color:#737373;
+    margin-bottom: 20px;
+}
+.inner .nav_toggle{
+    display:none;
+    color:black;
+    border-radius: 8px;
+}
+@media screen and (max-width:768px){
+    
+    .inner ul{
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        display:none;
+    }
+    .inner .ul li{
+        display:block;
+        margin:auto;
+        width:100%;
+        text-align: center;
+    }
+    .inner .nav_toggle{
+        position:absolute;
+        right:15px;
+        display:block;
+    }
+    .inner h2{
+        margin-bottom: 20px;
+    }
+    .active{
+    display: flex;
+    } 
+}
+/* footer */
+footer{
+    background-color: #706969;
+    border-top: 1px solid #333;
+}
+footer .inner{ 
+    padding: 40px 0 60px 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+footer .menu{
+    display: flex;
+    justify-content: center;
+}
+footer .menu li{
+    position: relative;
+}
+footer .menu li::before{
+    content: "";   /*가상요소 before(인라인)에 필수*/
+    width: 3px;
+    height: 3px;
+    background-color: #555;
+    position: absolute;   /*블록으로자동으로바뀜*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -1px;
+}
+footer .menu li:last-child::before{
+    display: none;
+}
+
+footer .menu li a{
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 700;
+    display: block;  /*인라인요소는 여백의 값을 사용을 못하여 블럭요소로 바꿈*/
+    padding: 15px;
+}
+footer .menu li a.green{
+    color: #669900;
+}
+footer .btn-group{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+footer .btn-group .btn{
+    font-size: 12px;
+    margin-right: 10px;
+}
+footer .btn-group .btn:last-child{
+    margin-right: 0;
+}
+footer .info{
+    margin-top: 30px;
+    text-align: center;
+}
+footer .info span{
+    margin-right: 20px;
+    color: rgb(150, 149, 149);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .info span:last-child{
+    margin-right: 0;
+}
+footer .copyright{
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 12px;
+}
+footer .logo{
+    margin: 30px auto 0;    /*img요소가 display:block;+margin:0 auto;인 경우 width 속성이 없이도 가운데 정렬이 가능*/
+}  
+footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:whitesmoke;
+    text-align: center;
+}
+footer p:nth-child(3){
+    padding-top:8px;
+    font-size: 5px;
+}
+
+/* badge 구현 */
+
+header .badges {
+    position: absolute;
+    top: 132px;
+    right: 20px;   
+    gap:5px;
+}
+.badges .badge1 img{
+    width: 220px;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 15); */
+}
+.badges .badge2 img{
+    width: 220px;
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 15);
+} 

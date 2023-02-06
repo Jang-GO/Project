@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <script src="https://kit.fontawesome.com/cd0a8d1aed.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘 뭐 먹지?</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  
+    <script defer src="../js/common.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <!-- header  -->
+    <header>
+      <div class="inner">
+        <a href="../index.html" class="logo">                   <!-- 도메인/index.html -->
+          <img src="../images/충북대로고.png" alt="충북대">
+        </a>
+        <a href="../index.html" style="text-decoration: none; color:#737373;">
+          <h2 
+          style="text-align: left; font-size: 50px; font-weight: 200; padding-top: 20px;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;오늘 뭐 먹지?
+        </h2>
+      </a>
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name"><a href="./front.html">정문</a></div>
+          </li>
+          <li class="item">
+            <div class="item__name"><a href="./west.html">서문</a></div>
+          </li>
+          <li class="item">
+            <div class="item__name"><a href="./middle.html">중문</a></div>
+          </li>
+          <li class="item">
+            <div class="item__name"><a href="./back.html">후문</a></div>
+          </li>
+        </ul>
+      </div>
+  </header>
+  <section class="signin">
+    <div class="adj">
+      <span>최근수정:</spans>
+      <time datetime="2023-01-29">2023-01-29</time>
+    </div>
+    <div class = "intro">
+      <h1 style="padding-bottom: 50px;">충북대, 중문 맛집 리스트 🍚</h1>
+      <p>"충대생이 검증한 찐 맛집"</p>
+    </div>
+    <div class="signin__card">
+      <ul class="restaurants-list">
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221103_5%2F16674457935131wVdw_JPEG%2FKakaoTalk_20221013_081735447_14.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/1606565769?placePath=%2Fhome">
+                <p>면식당 충북대점</p>
+              </a>
+              <p class="category">일식당</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 48 1층 면식당</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+          
+              <ul class="menu_name">
+                <li>[best]돈코츠 라멘</li>
+                <li>카제소바+밥</li>
+                <li>샤브 쌀국수</li>
+            </ul>
+            <ul class="menu_price">
+              <li>9,500원</li>
+              <li>9,800원</li>
+              <li>9,500원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              <h4>브레이크 타임</h4>
+              <p>16:00~17:00</p>
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221009_200%2F1665321918251fPRDv_JPEG%2FScreenshot_20221009_222436.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/1226472334?placePath=%2Fhome&c=15,0,0,0,dh">
+                <p>월미당 충북대점</p>
+              </a>
+              <p class="category">베트남 음식</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 66</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>차돌양지쌀국수</li>
+                <li>차돌양지힘줄쌀국수</li>
+                <li>양지쌀국수</li>
+            </ul>
+            <ul class="menu_price">
+              <li>11,000원</li>
+              <li>12,000원</li>
+              <li>10,500원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              <h4>브레이크 타임</h4>
+              <p>15:00~17:00</p>
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f320_320&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220425_153%2F1650848701096n32nN_JPEG%2F20210129_211449.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/1199126990?placePath=%2Fhome&c=15,0,0,0,dh">
+                <p>훠룽쿵부 충북대점</p>
+              </a>
+              <p class="category">중식당</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 66 대흥빌딩 1층 101호</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>마라탕</li>
+                
+            </ul>
+            <ul class="menu_price">
+              <li>7,000원</li>
+       
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">10:00~23:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">10:00~23:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f180_180&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzAxMDRfODgg%2FMDAxNjcyNzk4MjMxMDMz.HBPMG3ipn03sW8QYjPIhCbxdvXfj39KSVIKDkpUVUfwg.rkkI8A1NJ93ENgW7AXIjLdAQtNWl2eQJ-6iBX9VsBpYg.JPEG%2F20230104_104925.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/search/%EB%B9%85%EB%8F%88%EB%B6%80%EB%A6%AC/place/165929806?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">
+                <p>빅돈부리</p>
+              </a>
+              <p class="category">일식당</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 62</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>빅정식1</li>
+                <li>돈코츠 라멘</li>
+                <li>규동</li>
+            </ul>
+            <ul class="menu_price">
+              <li>7,500원</li>
+              <li>5,800원</li>
+              <li>5,000원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">정보가 없습니다.</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">정보가 없습니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MTBfMjgy%2FMDAxNjIzMjg1NDcxNzEz.z59krAvW_lkuoqjqSZR_YzW45UtDCdF29-22cP3YIQ8g.nbnP1_0P7rx9bNAjrp4cBaKkMIUQIVyQ-eTjLlfpEXcg.JPEG.dudfkr135%2FKakaoTalk_20210609_185415865_10.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/1698334488?placePath=%2Fhome&entry=plt&c=15,0,0,0,dh">
+                <p>알촌 충북대직영점</p>
+              </a>
+              <p class="category">퓨전음식</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 62</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>순한알밥</li>
+                <li>지리산 흑돼지 매콤제육알밥</li>
+                <li>불고기알밥</li>
+            </ul>
+            <ul class="menu_price">
+              <li>4,500원</li>
+              <li>5,800원</li>
+              <li>6,200원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">09:00~20:40</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">09:00~20:40</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20211031_224%2F1635657606564nJTEJ_JPEG%2Fupload_778311ae67f2c231db250338f1153248.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/13376765?placePath=%2Fhome&entry=plt&c=15,0,0,3,dh">
+                <p>한솥 충북대중문점</p>
+              </a>
+              <p class="category">도시락,컵밥</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 62</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>빅치킨마요</li>
+                <li>숯불직화구이 덮밥</li>
+                <li>돈까스도련님 고기고기</li>
+            </ul>
+            <ul class="menu_price">
+              <li>4,300원</li>
+              <li>6,000원</li>
+              <li>6,300원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">08:30~20:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">토,일</p>
+                  <p class="time">08:30~15:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjA0MjhfMTU2%2FMDAxNjUxMDc2NTYyMTU2.XMc9LXNXgvv-pX5xrJ7KDeMs__fBihi0rM70sMGUG9og.AWuLPvlwtr3JGMsjVBcLruFK6F-AAGR4eSjfSlU_6cwg.JPEG%2Fupload_106f888599a2c7f768aa0cd261d963b4.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/12962375?placePath=%2Fhome&entry=plt&c=15,0,0,3,dh">
+                <p>꼬불꼬불 닭갈비</p>
+              </a>
+              <p class="category">닭갈비</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 58</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>삼겹살 달갈비(중)</li>
+                <li>카레 닭갈비(중)</li>
+                <li>낙지 닭갈비(중)</li>
+            </ul>
+            <ul class="menu_price">
+              <li>19,000원</li>
+              <li>18,000원</li>
+              <li>22,000원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">11:50~23:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">토요일</p>
+                  <p class="time">11:50~23:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              <h4>휴무날</h4>
+              <p>매주 일요일 정기휴무</p>
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20220419_9%2F16503469930200jABV_JPEG%2Fupload_6f76bbf4e098c496080af08e1ffc8587.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/1047273824?placePath=%2Fhome&entry=plt&c=15,0,0,3,dh">
+                <p>브릿지파스타</p>
+              </a>
+              <p class="category">스파게티,파스타</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로674번길 56 2층 브릿지파스타</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>포모도로 파스타</li>
+                <li>토마토 라구 파스타</li>
+                <li>트러플 크림파스타</li>
+            </ul>
+            <ul class="menu_price">
+              <li>8,900원</li>
+              <li>10,900원</li>
+              <li>9,900원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">토요일</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              <h4>브레이크 타임</h4>
+              <p>15:00~17:30</p>
+            </div>
+            <div class="break_day">
+              <h4>휴무날</h4>
+              <p>매주 일요일</p>
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMDVfMTI2%2FMDAxNjcwMjAwOTcyMDUy.eMML7Eh7Zm0NHMTzJfDc6nDA1AzdZ1xtVtLW9I5CoyEg.pk-ehS2bpBtXJIizIdNUBFhpncsTIm3TbYnH4TbKVEYg.JPEG.djsunhwa%2F20221203%25A3%25DF132007.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/37683659?placePath=%2Fhome&entry=plt&c=15,0,0,3,dh">
+                <p>장터 순대국</p>
+              </a>
+              <p class="category">순대,순대국</p>
+            </div>
+            <p class="address">충북 청주시 서원구 내수동로 130</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>순대국밥</li>
+                <li>수육국밥</li>
+                <li>머릿고기국밥</li>
+            </ul>
+            <ul class="menu_price">
+              <li>8,000원</li>
+              <li>8,000원</li>
+              <li>8,000원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">08:00~24:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">08:00~24:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://ldb-phinf.pstatic.net/20221117_289/1668666958563GQyqU_JPEG/KakaoTalk_20220930_124553582.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/1751526576?placePath=%2Fhome&entry=plt&c=15,0,0,3,dh">
+                <p>은화수식당</p>
+              </a>
+              <p class="category">돈가스</p>
+            </div>
+            <p class="address">충북 청주시 서원구 내수동로102번길 40 1층(사창동)</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>경양식돈가스</li>
+                <li>기본카레</li>
+                <li>하와이돈가스</li>
+            </ul>
+            <ul class="menu_price">
+              <li>7,500원</li>
+              <li>6,500원</li>
+              <li>8,000원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">11:00~21:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+        <li class="restaurant">
+          <a href="" class="restaurant-img">
+            <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221103_5%2F16674457935131wVdw_JPEG%2FKakaoTalk_20221013_081735447_14.jpg" alt="">
+          </a>
+          <div class="inform">
+            <div class="name">
+              <a href="https://map.naver.com/v5/entry/place/1606565769?placePath=%2Fhome">
+                <p>또또와식당</p>
+              </a>
+              <p class="category">두부요리</p>
+            </div>
+            <p class="address">충북 청주시 서원구 1순환로672번길 51 1층</p>
+            <h3>대표메뉴</h3>
+            <div class="menu">
+              
+              <ul class="menu_name">
+                <li>원조순두부</li>
+                <li>치즈순두부</li>
+                <li>참치돌솥밥</li>
+            </ul>
+            <ul class="menu_price">
+              <li>4,500원</li>
+              <li>5,000원</li>
+              <li>5,500원</li>
+            </ul>
+          </div>
+          <div class="operation_day">
+            <div class="operation_time">
+              <h4>운영시간</h4>
+              <div class="time-container">
+                <div class="week">
+                  <p class="week">주중</p>
+                  <p class="time">09:00~21:00</p>
+                </div>
+                <div class="weekend">
+                  <p class="week">주말</p>
+                  <p class="time">09:00~21:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="break_day">
+              
+            </div>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      
+      
+    </div>
+  </section>
+
+  <!-- footer -->
+   
+
+  <!-- footer -->
+  <footer>
+    <div class="inner">
+      <img src="../images/ㅇㅁㅁ.png" style="margin: auto;">
+      <p>충북대 학생을 위한 최고의 맛집 추천 사이트!</p>
+      <p>본 페이지는 수입창출 목적이 전혀 없음을 밝힙니다.</p>
+
+      </ul>
+      <div class="btn-group">
+        <a href="./front.html" class="btn btn--wihte">정문</a>
+        <a href="./west.html" class="btn btn--wihte">서문</a>
+        <a href="./middle.html" class="btn btn--wihte">중문</a>
+        <a href="./back.html" class="btn btn--wihte">후문</a>
+      </div>
+      <div class="info">
+        <span>충북대학교</span>
+        <span>정보통신공학부</span>
+        <span>최강우 장현서 이진택</span>
+        <p class="copyright">
+          &copy; <span class="this-year"> 
+            
+          </span> 오늘 뭐 먹지?. All Rights Reserved.
+        </p>
+        <img src="../images/영문로고.png" alt="text" class="logo" />
+      </div>
+    </div>    
+  </footer> 
+
+</body>
+
+</html>
